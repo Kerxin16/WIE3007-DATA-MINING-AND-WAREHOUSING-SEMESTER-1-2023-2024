@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><_ROOT_ EMVERSION="15.2" ORIENTATION="HORIZONTAL">
+<Workspace>
+<NODES>
+<NODE CLASS="SASHELP.EMEXPL.ASSOCIATE.CLASS" COMPONENT="Association" ID="Assoc" X="476" Y="198" DESCRIPTION="Sequence Analysis" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="EXPLORE" TOOLPREFIX="Assoc">
+<PROPERTIES ItemCount="4" AssocSupportType="PERCENT" SeqSupportType="PERCENT" SupportA="." MinConf="10" PctsupA="5" PctsupS="2" SupportS="." ChainCount="3" ConsolTime="0" MaxDur="." Criterion="DEFAULT" NumRules="200" NumTransposeRules="200" MaxItems="100000" ExportIdRule="Y" Recommendation="N" ForceRun="N" RunAction="Train" Component="Association">
+<VariableProperties/>
+<EmVariableAttributes/>
+<EmTargetAttributes/>
+<EmFileProperties>
+<RULESFILTER Type="DATA">
+<Data/>
+<Metadata/>
+</RULESFILTER>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMEXPL.ASSOCIATE.CLASS" COMPONENT="Association" ID="Assoc2" X="468" Y="123" DESCRIPTION="Association" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="EXPLORE" TOOLPREFIX="Assoc">
+<PROPERTIES ItemCount="4" AssocSupportType="PERCENT" SeqSupportType="PERCENT" SupportA="." MinConf="10" PctsupA="5" PctsupS="2" SupportS="." ChainCount="3" ConsolTime="0" MaxDur="." Criterion="DEFAULT" NumRules="200" NumTransposeRules="200" MaxItems="100000" ExportIdRule="N" Recommendation="N" ForceRun="N" RunAction="Train" Component="Association">
+<VariableProperties/>
+<EmVariableAttributes/>
+<EmTargetAttributes/>
+<EmFileProperties>
+<RULESFILTER Type="DATA">
+<Data/>
+<Metadata/>
+</RULESFILTER>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMSAMP.IDS.CLASS" COMPONENT="DataSource" ID="Ids" X="240" Y="159" DESCRIPTION="Tran_data" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="SAMPLE" TOOLPREFIX="Ids">
+<PROPERTIES DataSource="trandata" Scope="LOCAL" Role="TRANSACTION" Library="AAEM61" Table="ORI_DATA" NCols="38" NObs="1317" NBytes="525312" Segment="" DataSourceRole="TRANSACTION" OutputType="VIEW" ForceRun="N" ComputeStatistics="N" DataSelection="DATASOURCE" NewTable="" MetaAdvisor="BASIC" ApplyIntervalLevelLowerLimit="Y" IntervalLowerLimit="20" ApplyMaxPercentMissing="Y" MaxPercentMissing="50" ApplyMaxClassLevels="Y" MaxClassLevels="20" IdentifyEmptyColumns="Y" VariableValidation="STRICT" NewVariableRole="REJECT" DropMapVariables="Y" DsId="trandata" DsSampleName="" DsSampleSizeType="" DsSampleSize="" DsCreatedBy="" DsCreateDate="2020141499.7" DsModifiedBy="" DsModifyDate="2020141499.7" DsScope="LOCAL" Sample="D" SampleSizeType="PERCENT" SampleSizePercent="20" SampleSizeObs="10000" DBPassThrough="Y" RunAction="Train" Component="DataSource" Description="">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="ApplicationOrder" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Course" AttributeName="ROLE" AttributeValue="ID"/>
+<DELTA Variable="Target" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+</EmVariableAttributes>
+<EmTargetAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+</NODES>
+<CONNECTIONS>
+<CONNECTION FROM="Ids" TO="Assoc"/>
+<CONNECTION FROM="Ids" TO="Assoc2"/>
+</CONNECTIONS>
+<NOTES>
+<DATA><![CDATA[
+
+]]>
+</DATA>
+</NOTES>
+</Workspace>
+</_ROOT_>
